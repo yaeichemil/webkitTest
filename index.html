@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha Test</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 30px;
+      background: #eeeeee;
+    }
+
+    .test {
+      width: 350px;
+      max-width: 100%;
+      background: repeating-conic-gradient(
+        #ffffff 0% 25%,
+        #ff9999 0% 50%
+      ) 50% / 40px 40px;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>HEVC Alpha Test</h2>
+
+  <div class="test">
+    <video autoplay muted loop playsinline controls>
+      <source
+        src="./before-service_archive_prototype.mp4"
+        type='video/mp4; codecs="hvc1"'
+      >
+    </video>
+  </div>
+
+</body>
+</html>
